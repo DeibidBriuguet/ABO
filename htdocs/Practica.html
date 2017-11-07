@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Practica 1</title>
+<title>Terminos y condiciones</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../estilos/estilos_practicas.css">
+	<link rel="stylesheet" type="text/css" href="../estilos/estilos-navact.css">
+	<link rel="stylesheet" href="../iconos/style.css">
+	<link rel="stylesheet" type="text/css" href="../estilos/infoact.css">
+	<link href="https://fonts.googleapis.com/css?family=Baloo|Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="../iconos/style.css">
+</head>
+
+<body>
+	<header id="contenedor-barra-navegacion">
+		<nav id="barra-de-navegacion">
+			<ul>
+				<li class="no-icono" id="act"><a href="actividades.html">Actividades</a></li>
+				<li class="icono-home" id="joum"><a href="../index.html"><span class="icon-home3"></span></a>
+				<li class="no-icono" id="tab"><a href="tabla-punnet.html">Tabla de Punnet</a></li>
+				<li class="no-icono" id="test"><a href="test-de-coombs.html">Test de Coombs</a></li>
+				<li class="no-icono" id="lec"><a href="lecciones.html">Lecciones</a></li>
+				
+				
+				</li>
+			</ul>
+		</nav>
+	</header><br><br><br><br><br><br><br><br>
+<body bgcolor="#EAEAEA">
+	<div id="empieza">
+		<h1>Deseas empezar el quiz?</h1>
+		<button onclick="empezar()">Que comience!</button>
+	</div>
+	<div id="todo">
+	<form name="all" id="all" method="post" onsubmit="return enviar();">
+	<center><h1>¡Haz lo que pide en las instrucciones eh intenta conseguir todas las respuestas bien!</h1></center><br><br>
+	Respuesta abierta. Responde lo que se te indica.<br><br>
+	<div id="completa">
+			<div id="preg-1">
+				Pregunta uno
+				<br>
+					<input type="text" id="invited" placeholder="(respuesta)"><br><br>
+					<button type="button" id="boton1" onclick="atras14()" disabled>Siguiente</button> <button type="button" onclick="actividadcuatro()" id="Uno">Verificar</button><br><br>
+				4/4
+			</div>
+			<div id="preg-2">
+				Pregunta dos<br>
+					<input type="text" id="bougth" placeholder="(respuesta)"><br><br>
+					<button type="button" id="boton2" onclick="atras13()" disabled>Siguiente</button> <button type="button" onclick="actividadtres()" id="Dos">Verificar</button><br><br>
+				3/4
+			</div>
+			<div id="preg-3">
+				Pregunta tres<br><br>
+					<input type="text" id="destroyed" placeholder="(respuesta)">
+					<input type="text" id="writen" placeholder="(respuesta)"><br>
+					<button type="button" id="boton3" onclick="atras12()" disabled>Siguiente</button> <button type="button" onclick="actividaddos()" id="Tres">Verificar</button><br><br>
+				2/4
+			</div>
+			<div id="preg-4">
+				Pregunta cuatro<br>
+					<input  id="invited1" placeholder="(invite)"><br><br>
+
+					<button type="button" id="boton4" onclick="atras11()" disabled >Siguiente</button> <button type="button"  onclick="actividaduno()" id="Cuatro">Verificar</button><br><br>
+					
+				1/4
+			</div>
+			<div id="resultado1">
+					Resultado:<p id="Primera"></p>
+			</div>
+				</div>
+	<br>
+	Ordena los pasos.<br><br>
+	<div id="ordena">
+			<div id="preg-5">
+				paso 1 y descripcion/paso 2 y descripcion/paso 3 y descripcion/paso 4 y descripcion/	<br><br>
+					<input type="text" id="segundauno"<br><br>
+				<button type="button" id="boton5" onclick="atras23()" disabled >Siguiente</button> <button type="button" onclick="actividadcinco()" id="Cinco">Verificar</button><br><br>
+				3/3
+			</div>
+			<div id="preg-6">
+				paso 1 y descripcion/paso 2 y descripcion/paso 3 y descripcion/paso 4 y descripcion/	<br>
+					<input type="text" id="segundados"><br><br>
+				<button type="button" id="boton6" onclick="atras22()" disabled >Siguiente</button> <button type="button" onclick="actividadseis()" id="Seis">Verificar</button><br><br>
+				2/3
+			</div>
+			<div id="preg-7">
+				paso 1 y descripcion/paso 2 y descripcion/paso 3 y descripcion/paso 4 y descripcion/	<br><br>
+					<input type="text" id="segundatres"><br><br>
+				<button type="button" id="boton7" onclick="atras21()" disabled >Siguiente</button> <button type="button" onclick="actividadsiete()" id="Siete">Verificar</button><br><br>
+				1/3
+			</div>
+			<div id="resultado2">
+					Resultado:<p id="Segunda"></p>
+			</div>
+			</div>
+		<br><br><br>
+		Pregunta cerrada<br><br>
+		<div id="elige">
+			<div id="preg-8">
+				PEjemplo de pregunta<br>
+				
+					<input type="radio" name="respuestaocho" value="A">A
+					<input type="radio" name="respuestaocho" value="B">B<br>
+					<input type="radio" name="respuestaocho" value="C" id="respuestaO"> C
+					<input type="radio" name="respuestaocho" value="D">D<br>
+					<br><br>
+					<button type="button" id="boton8" onclick="atras33()" disabled>Siguiente</button> <button type="button" onclick="actividadocho()" id="Ocho">Verificar</button><br><br>
+					3/3
+			</div>
+			<div id="preg-9">
+				Ejemplo pregunta <br>
+				
+					<input type="radio" name="respuestanueve" value="A">A
+					<input type="radio" name="respuestanueve" value="B" id="respuestaN">B<br>
+					<input type="radio" name="respuestanueve" value="C">C
+					<input type="radio" name="respuestanueve" value="D">D<br>
+					<br><br>
+					<button type="button" id="boton9" onclick="atras32()"  disabled>Siguiente</button> <button type="button" onclick="actividadnueve()" id="Nueve">Verificar</button><br><br>
+					2/3
+			</div>
+			<div id="preg-10">
+					Ejemplo pregunta<br>
+					<input type="radio" name="respuestadiez" value="A">A
+					<input type="radio" name="respuestadiez" value="B">B<br>
+					<input type="radio" name="respuestadiez" value="C">C
+					<input type="radio" name="respuestadiez" value="D" id="respuestaD">D<br>
+					<br><br>
+					<button type="button" id="boton10" onclick="atras31()"  disabled>Siguiente</button> <button type="button" onclick="actividaddiez()" id="Diez">Verificar</button><br><br>
+					1/3
+			</div>
+			<div id="resultado3">
+					Resultado:<p id="Tercera"></p>
+			</div>
+			</div>
+			<div id="extras">
+			<form>	
+			<button type="button" onclick="correcto()">Ver calificacion</button> 
+			<br><br>
+			<button type="button" onclick="correctas()">Respuestas correctas</button> 
+			<br><br>
+			<button>Recargar</button>
+			</form>
+			</div>
+	</div>
+	</form>
+	<div id="correctos">
+	<form>
+		<ul>
+			<li>Respuesta 1</li>
+			<li>Respuesta 2, Respuesta3</li>
+			<li>Respuesta 4</li>
+			<li>Respuesta 5</li>
+		</ul>
+		<ul>
+			<li>Respuesta 6 Orden de las actividades</li>
+			<li>Respuesta 7 Orden de las actividades</li>
+			<li>Respuesta 8 Orden de las actividades</li>
+		</ul>
+		<ul>
+			<li>/C</li>
+			<li>/B</li>
+			<li>/D</li>
+		</ul>
+		<button>Recargar</button>
+		</form>
+	</div>
+	<div id="resultado">
+	<form>
+		<h1><p id="total"><br></h1>
+		<h1>Buen trabajo! no te rindas!</p></h1>
+		<button>Recargar</button>
+		</form>
+	</div>
+	<br><br><br><br>
+	<div id="condenido-final">
+		<div id="izquierda">
+			<div id="seccion"><a href="">Terminos y <br> conduciones</a></div>
+			<div id=s"seccion"><a href="">Creadores</a></div>
+			<div id="seccion"><a href="">Contactanos</a></div>
+			<div> <a href="">¿Ayuda?</a></div>
+		</div>	
+
+		<div id="centro">
+			Este sitio fue creado el:<br>
+			01/11/2017<br><br>
+
+			Los responsables de esta pagina son Nombre completo grupo<br><br>
+
+			El proposito de esta pagina es meramente por la exposicion de nuestros conocimientos.<br>
+			Aun asi, no se permite ningun tipo de copia del contenido de este sitio, cualquier clase de infraccion a estos terminos tendra sus consecuencias, dichas explicadas en los terminos y condiciones de este sitio
+		</div>
+
+		<div id="derecha">
+			<br>
+			<a href="">
+			<img src="../img/github.png" id="github">
+			<br>
+			ABO es un proyecto de fuente abierta, hecho para y por ti, si eres un programador altruista visita nuestro repositorio en github!
+			</a>
+		</div>
+	</div>
+<script type="text/javascript">
+function empezar(){
+document.getElementById('empieza').style.display = 'none';
+document.getElementById('todo').style.display = 'block';
+cal=0;
+cal1=0
+cal2=0;
+cal3=0;
+	}
+
+function correctas(){
+	document.getElementById('todo').style.display = 'none';
+	document.getElementById('correctos').style.display = 'block';
+}
+function correcto(){
+	document.getElementById('todo').style.display = 'none';
+	document.getElementById('resultado').style.display = 'block';
+	document.getElementById("total").innerHTML = "Obtuviste un "+cal+" de 10!";
+}
+															function actividaduno()
+															{
+																
+												            	document.getElementById("boton4").disabled = false;
+												            	var answeruno=document.forms.all.invited1.value;
+												            	if(answeruno=="invited"){
+												            		document.getElementById("preg-4").style.backgroundColor="#73dd7f";
+												            		cal+=1;
+												            		cal1+=1;
+												            		alert("CORRECT!!"); 
+												            	
+												            	}
+												            	else{
+												            		document.getElementById("preg-4").style.backgroundColor="#dd7286";
+												            	}
+												            	document.getElementById("Cuatro").disabled = true;
+																
+												       		}
+												       		function actividaddos()
+															{
+												            	document.getElementById("boton3").disabled = false;
+												            	var answerdos=document.forms.all.destroyed.value;
+												            	var answerdosdos=document.forms.all.writen.value;
+																if(answerdos=="destroyed"){
+																
+												            		cal+=.5;
+												            		cal1+=.5;
+												            		alert("CORRECT!!");
+												            		document.getElementById("preg-3").style.backgroundColor="#73dd7f";
+												            	}
+												            	if(answerdosdos=="written"){
+												   
+												            		cal+=.5;
+												            		cal1+=.5;
+												            		alert("CORRECT!!");
+												            		document.getElementById("preg-3").style.backgroundColor="#73dd7f";
+												            	}
+												            	else{
+												            		document.getElementById("preg-3").style.backgroundColor="#dd7286";
+												            	}
+												            	document.getElementById("Tres").disabled = true;
+
+												       		}
+												       		function actividadtres()
+															{
+												            	document.getElementById("boton2").disabled = false;
+												            	var answertres=document.forms.all.bougth.value;
+																if(answertres=="bougth"){
+
+																	document.getElementById("preg-2").style.backgroundColor="#73dd7f";
+												            		cal+=1;
+												            		cal1+=1;
+												            		alert("CORRECT!!");
+												            	}
+												            	else{
+												            		document.getElementById("preg-2").style.backgroundColor="#dd7286";
+												            	}
+												            	document.getElementById("Dos").disabled = true;
+
+												       		}
+												       		function actividadcuatro()
+															{
+												            	document.getElementById("boton1").disabled = false;
+												            	var answercuatro=document.forms.all.invited.value;
+																if(answercuatro=="invited"){
+																	document.getElementById("preg-1").style.backgroundColor="#73dd7f";
+												            		cal+=1;
+												            		cal1=cal
+												            		alert("CORRECT!!");
+
+												            	}
+												            	else{
+												            		document.getElementById("preg-1").style.backgroundColor="#dd7286";
+												            	}
+												            	document.getElementById("Uno").disabled = true;
+												            	document.getElementById("Primera").innerHTML = cal1+"/4";
+       														}
+			       		function actividadsiete()
+						{
+			            	document.getElementById("boton7").disabled = false;
+			            	var answercinco=document.forms.all.segundatres.value;
+							if(answercinco=="If they had been on holiday in June, the weather would have been better."){
+								document.getElementById("preg-7").style.backgroundColor="#73dd7f";
+								cal+=1;
+								cal2+=1;
+								alert("CORRECT!!");
+
+							}
+							else{
+							document.getElementById("preg-7").style.backgroundColor="#dd7286";
+												            	}
+							document.getElementById("Siete").disabled = true;
+
+			       		}
+			       		function actividadseis()
+						{
+			            	document.getElementById("boton6").disabled = false;
+			            	var answerseis=document.forms.all.segundados.value;
+							if(answerseis=="I would have helped you, if you had asked."){
+								document.getElementById("preg-6").style.backgroundColor="#73dd7f";
+								cal+=1;
+								cal2+=1;
+								alert("CORRECT!!");
+
+							}
+							else{
+												            		document.getElementById("preg-6").style.backgroundColor="#dd7286";
+												            	}
+							document.getElementById("Seis").disabled = true;
+			       		}
+			       		function actividadcinco()
+						{
+			            	document.getElementById("boton5").disabled = false;
+			            	var answersiete=document.forms.all.segundauno.value;
+							if(answersiete=="Why would you have done if you hadn't time for that?"){
+								document.getElementById("preg-5").style.backgroundColor="#73dd7f";
+								cal+=1;
+								cal2+=1;
+								alert("CORRECT!!");
+							}
+							else{
+												            		document.getElementById("preg-5").style.backgroundColor="#dd7286";
+												            	}
+							document.getElementById("Cinco").disabled = true;
+							document.getElementById("Segunda").innerHTML = cal2+"/3";
+
+			       		}
+       		function actividadocho()
+			{
+            	document.getElementById("boton8").disabled = false;
+            	if (document.getElementById('respuestaO').checked) {
+            		document.getElementById("preg-8").style.backgroundColor="#73dd7f";
+					cal+=1;
+					cal3+=1;
+					alert("CORRECT!!");
+				}
+				else{
+					document.getElementById("preg-8").style.backgroundColor="#dd7286";
+												            	}
+				document.getElementById("Ocho").disabled = true;
+       		}
+       		function actividadnueve()
+			{
+            	document.getElementById("boton9").disabled = false;
+            	if (document.getElementById('respuestaN').checked) {
+            		document.getElementById("preg-9").style.backgroundColor="#73dd7f";
+				  cal+=1;
+				  cal3+=1;
+					alert("CORRECT!!");
+				}
+				else{
+												            		document.getElementById("preg-9").style.backgroundColor="#dd7286";
+												            	}
+				document.getElementById("Nueve").disabled = true;
+       		}
+       		function actividaddiez()
+			{
+            	document.getElementById("boton10").disabled = false;
+            	if (document.getElementById('respuestaD').checked) {
+            		document.getElementById("preg-10").style.backgroundColor="#73dd7f";
+				  cal+=1;
+				  cal3+=1;
+					alert("CORRECT!!");
+				}
+				else{
+												            		document.getElementById("preg-10").style.backgroundColor="#dd7286";
+												            	}
+			document.getElementById("Diez").disabled = true;
+			document.getElementById("Tercera").innerHTML = cal3 +"/3";
+       		}
+
+
+			function atras11() {
+				document.getElementById("preg-4").style.zIndex = "-10";
+			}
+			function atras12() {
+			    document.getElementById("preg-3").style.zIndex = "-10";
+			    alert(answerdos +"y"+ answerdosdos);
+			}
+			function atras13() {
+			    document.getElementById("preg-2").style.zIndex = "-10";
+			}
+			function atras14() {
+			    document.getElementById("preg-1").style.zIndex = "-10";
+			    
+			}
+			function atras21() {
+			    document.getElementById("preg-7").style.zIndex = "-10";
+			}
+			function atras22() {
+			    document.getElementById("preg-6").style.zIndex = "-10";
+			}
+			function atras23() {
+			    document.getElementById("preg-5").style.zIndex = "-10";
+			}
+			function atras31() {
+			    document.getElementById("preg-10").style.zIndex = "-10";
+			}
+			function atras32() {
+			    document.getElementById("preg-9").style.zIndex = "-10";
+			}
+			function atras33() {
+			    document.getElementById("preg-8").style.zIndex = "-10";
+			}
+
+		
+</script>
+
+<script src="script_actividad.js"></script>
+</body>
+</html>

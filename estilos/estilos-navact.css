@@ -1,0 +1,91 @@
+*{
+
+	text-decoration: none;
+	margin: 0;
+	padding: 0px;	
+	box-sizing: border-box;
+}
+
+header{
+	padding: .2em;
+	background-color: #537DFF;
+	height: 4em;
+	width: 100%;
+	position: fixed;
+	z-index: 30;
+}
+
+/* Lista de barra de navegacion */
+#barra-de-navegacion li{
+	display:block;
+	color: white;
+	
+}
+
+#barra-de-navegacion li{
+	transition: background-color 0.3s ease-out 0.1s;
+}
+
+/* Links en el navbar */
+nav li > a{
+	display: inline-block;
+	/* Importando letra estilo Roboto */
+	font-family: 'Roboto', sans-serif;
+	text-decoration: none;
+	color: white;
+	
+	padding: 1.2em 2em;
+}
+
+nav li>ul {
+	background-color:#42A5F5; 
+	display: none;
+	
+}
+
+#barra-de-navegacion{
+	background-color: #FF4541;
+
+}
+
+#act{
+	background-color: #537DFF ;
+	box-shadow : 10px 0px 5px 1px rgba(0,0,0,0.5);
+	float: right;
+}
+#lec{
+	background-color: #AA2FE8 ;
+	box-shadow: inset -7px 0 15px -7px rgba(0,0,0,0.5);
+
+	float: left;
+}
+#test{
+	background-color: #FFEB65 ;
+	box-shadow: inset -7px 0 15px -7px rgba(0,0,0,0.5);
+	float: left;
+}
+#tab{
+	background-color: #E88E2F ;
+	box-shadow: inset -7px 0 15px -7px rgba(0,0,0,0.5);
+	float: left;
+}
+#joum{
+	background-color: #FF4541;
+	box-shadow: inset -7px 0 15px -7px rgba(0,0,0,0.5);
+	float: left;
+}
+#joum:hover{
+	background-color: #FF807E ;
+}
+#tab:hover{
+	background-color: #E8A967  ;
+}
+#test:hover{
+	background-color: #FFF3A2 ;
+}
+#lec:hover{
+	background-color:  #BD67E8;
+}
+#act:hover{
+	background-color: #90ABFF ;
+}
