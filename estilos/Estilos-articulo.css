@@ -1,0 +1,37 @@
+div#Estructura h2{
+	color: #42A5F5;
+	text-align: center;
+}
+
+div#Estructura p{
+	text-align: center;
+	opacity: .87;
+	font-size: 20px;
+	text-decoration: none;
+	margin-left: 3em; 
+}
+.articulo{
+	width: 80%;
+	margin: auto;
+	border-radius: 15px;
+	border-bottom: .1em solid #757575;
+	border-top: .1em solid #757575;
+	border-right: .1em solid #757575; 
+	border-left: .1em solid #757575;
+	background-color: #fff;
+	clear: both;
+	overflow: hidden;
+
+}	
+#Estructura{
+	font-family: "Times New Roman", Georgia, Serif;
+	padding-right: 2em;
+	padding-left: 2em;
+}
+#Estructura img{
+	float: right;
+	border: 2px dotted green;
+	height: 8em;
+	width: 8em;
+	margin-bottom: 2em;
+}

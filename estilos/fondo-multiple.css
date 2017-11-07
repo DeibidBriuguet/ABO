@@ -1,0 +1,54 @@
+@keyframes cf4FadeInOut {
+ 0% {
+   opacity:1;
+ }
+ 22.5% {
+   opacity:1;
+ }
+ 25% {
+   opacity:0;
+ }
+ 97.5% {
+   opacity:0;
+ }
+ 100% {
+   opacity:1;
+ }
+}
+
+#contenedor {
+  position:fixed;
+  width: 100%;
+  height: 100%;
+  visibility: visible;
+  z-index:-20 ;
+}
+#contenedor img {
+  position:absolute;
+  left:0;
+  width: 100%;
+  height: 100%;
+}
+
+#contenedor img {
+  animation-name: cf4FadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 40s;
+}
+#contenedor img:nth-of-type(1) {
+
+  animation-delay: 30s;
+}
+#contenedor img:nth-of-type(2) {
+
+  animation-delay: 20s;
+}
+#contenedor img:nth-of-type(3) {
+
+  animation-delay: 10s;
+}
+#contenedor img:nth-of-type(4) {
+
+  animation-delay: 0;
+}

@@ -1,0 +1,56 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+#condenido-final{
+	background-color: grey;
+	border-color: red;
+	width: 100%;
+	height: 252px;
+	border: 10px solid red;
+	border-radius: 5px;
+	display: block;
+}
+
+#derecha{
+	color: white;
+	width: 15%;
+	text-align: center;
+	float: left;
+	display: block;
+
+}
+#centro{
+	color: white;
+	width: 74%;
+	float: left;
+	border-right:1px dotted white; 
+	border-left: 1px dotted white;
+	height: 247px;
+	display: block;
+}
+
+#izquierda{
+	color: white;
+	width: 10%;
+	text-align: center;
+	float: left;
+	display: block;
+}
+#github{
+	width: 50px;
+	height: 50px;
+}
+
+#seccion{
+	height: 60px;
+	border-bottom: 1px dotted white;
+}
+#condenido-final{
+  z-index: 20;
+  	position: relative;
+}
+
