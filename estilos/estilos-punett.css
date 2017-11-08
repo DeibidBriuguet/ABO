@@ -1,0 +1,32 @@
+    input{
+    height: 2em;
+    border-radius: 50px;
+    border:2px solid rgb(221, 221, 221);
+    box-shadow: 10px 15px 5px rgb(221, 221, 221);
+    font-family: baloo;
+    color: #555555;
+    }
+button{
+    height: 2em;
+    border-radius: 50px;
+    border:2px solid rgb(221, 221, 221);
+    width: 10em;
+    }
+
+    button:disabled{
+    background-color: #E8E8E8;
+    color: #D2D2D2;
+}
+button:disabled:hover{
+    background-color:#ffebd6; 
+    color: #e0bf9d;  
+}
+h1{
+    font-family: roboto;
+    color: #555555;  
+}
+button:enabled:hover{
+    background-color: #edb171;
+    color: #c16503;
+    border: 2px solid #c16503;
+}

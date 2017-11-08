@@ -1,0 +1,784 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta charset="utf-8">
+     <link rel="stylesheet" type="text/css" href="../estilos/estilos-index.css">
+  <link rel="stylesheet" type="text/css" href="../estilos/fondo-multiple.css">
+  <link rel="stylesheet" type="text/css" href="../estilos/estilos-navbar.css">
+  <link rel="stylesheet" href="../iconos/style.css">
+  <link rel="stylesheet" type="text/css" href="../estilos/informacion-legal.css">
+  <link rel="stylesheet" type="text/css" href="../estilos/estilos-punett.css">
+  
+</head>
+
+
+<body>
+  <div>
+  <title>Cuadros de Punett</title>
+  <header id="contenedor-barra-navegacion" style="background-color: #E88E2F;">
+    <nav id="barra-de-navegacion">
+      <ul>
+        <li class="no-icono" id="act"><a href="Practoca.html">Actividades</a></li>
+        <li class="no-icono" id="lec"><a href="htdocs/lecciones.html">Lecciones</a></li>
+        <li class="no-icono" id="test"><a href="htdocs/test-de-coombs.html">Determinacion Sanguinea</a></li>
+        <li class="no-icono" id="tab"><a href="punett.html">Cuadros de Punnet</a></li>
+        <li class="icono-home" id="joum" style="float: left; box-shadow: inset -7px 0 15px -7px rgba(0,0,0,0.5);"><a href="index.html"><span class="icon-home3"></span></a></li>
+      </ul>
+    </nav>
+  </header>
+  <form>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+    <div class="articulo" style="padding: 1em;">
+      <h1 style="color: red; text-align: center; ">Cuadros de Punett</h1>
+      <br>
+      <br>
+      <br>
+        <div style="float: left;">
+          <h3 >Selecciona el tipo de sangre Materno</h3><br>
+          <div style="text-align: center;">
+          <form id="Madre" >
+          <input type="radio" name="TiposangreM" value="A" id="AM" style="margin-right: 1em;">A
+          <input type="radio" name="TiposangreM" value="AB" id="ABM" style="margin-right: 1em;" >AB<br>
+          <input type="radio" name="TiposangreM" value="B" id="BM" style="margin-right: 1em;" >B
+          <input type="radio" name="TiposangreM" value="0" id="0M" style="margin-right: 1em;" ">0<br>
+          </form>
+          </div>
+        </div>
+        <div style="float: right; ">
+          <h3>Selecciona el tipo de sangre Paterno</h3> <br>
+          <form id="Padre">
+          <div style="text-align: center;">
+          <input type="radio" name="TiposangreP" value="A" id="AP" style="margin-right: 1em;">A
+          <input type="radio" name="TiposangreP" value="AB" id="ABP" style ="margin-right: 1em;">AB<br>
+          <input type="radio" name="TiposangreP" value="B" id="BP" style="margin-right: 1em;" >B
+          <input type="radio" name="TiposangreP" value="0" id="0P" style="margin-right: 1em;" "> 0<br>
+          </form>
+          </div>
+        </div>
+        <br><br> <br><br>
+        <br><br> <br><br>
+          <label id="choiceLabel" style="float: right;"></label>
+          <label id="choiceLabel2" style="float: left;"></label>
+
+        <div style="text-align: center;">
+          <button type="button" id="calcula" onclick="calcular()">Mostrar</button><br>
+          <button></button>
+        </div>
+        
+   </div>
+  <br>
+  <br>
+  <br>
+<div class="articulo 2" id="AB-B" style=" padding-bottom: 3em; padding-right: 5em; display: none;">
+  <h1 style="text-align: center;">AB * B</h1>
+  
+  <table style="border: 1px solid red; float: left; margin-left: 3em; ">
+    <tr style="background-color: red;">
+      <td style="background-color: green;"></td>
+      <td>A</td>
+      <td>B</td>
+    </tr>
+    <tr>
+      <td style="background-color: red;">B</td>
+      <td>AB</td>
+      <td>BB</td>
+    </tr>
+    <tr>
+      <td style="background-color: red;">0</td>
+      <td>A0</td>
+      <td>B0</td>
+    </tr>
+  </table>
+  <table style="border: 1px solid red; float: left; margin-left: 3em; ">
+    <tr style="background-color: red;">
+      <td style="background-color: green;"></td>
+      <td>A</td>
+      <td>B</td>
+    </tr>
+    <tr>
+      <td style="background-color: red;">B</td>
+      <td>AB</td>
+      <td>BB</td>
+    </tr>
+    <tr>
+      <td style="background-color: red;">B</td>
+      <td>AB</td>
+      <td>BB</td>
+    </tr>
+  </table>
+  <ul style="list-style-type:none; float: right; margin-left: 2em;">
+    <li><h1>BB / AB</h1></li>
+</ul>  
+<ul style="list-style-type:none; float: right; margin-left: 2em;">
+  <li>AB=75%</li>
+  <li>B0=25%</li>
+  <li>AO=25%</li>
+  <li>BB=75%</li>
+</ul> 
+</div> 
+<div class="articulo 2" id="A-B" style=" padding-bottom: 3em; padding-right: 5em; display: none;">
+  <h1 style="text-align: center;">A * B</h1>
+  <table style="border: 1px solid red; float: left; margin-left: 3em; ">
+    <tr style="background-color: red;">
+      <td style="background-color: green;"></td>
+      <td>A</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td style="background-color: red;">B</td>
+      <td>AB</td>
+      <td>B0</td>
+    </tr>
+    <tr>
+      <td style="background-color: red;">0</td>
+      <td>A0</td>
+      <td>00</td>
+    </tr>
+  </table>
+  <table style="border: 1px solid red; float: left; margin-left: 3em; ">
+    <tr style="background-color: red;">
+      <td style="background-color: green;"></td>
+      <td>A</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td style="background-color: red;">B</td>
+      <td>AB</td>
+      <td>B0</td>
+    </tr>
+    <tr>
+      <td style="background-color: red;">B</td>
+      <td>AB</td>
+      <td>B0</td>
+    </tr>
+  </table>
+  <table style="border: 1px solid red; float: left; margin-left: 3em; ">
+    <tr style="background-color: red;">
+      <td style="background-color: green;"></td>
+      <td>A</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td style="background-color: red;">B</td>
+      <td>AB</td>
+      <td>AB</td>
+    </tr>
+    <tr>
+      <td style="background-color: red;">0</td>
+      <td>A0</td>
+      <td>A0</td>
+    </tr>
+  </table>
+  <table style="border: 1px solid red; float: left; margin-left: 3em; ">
+    <tr style="background-color: red;">
+      <td style="background-color: green;"></td>
+      <td>A</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td style="background-color: red;">B</td>
+      <td>AB</td>
+      <td>AB</td>
+    </tr>
+    <tr>
+      <td style="background-color: red;">B</td>
+      <td>AB</td>
+      <td>AB</td>
+    </tr>
+  </table>
+<ul style="list-style-type:none; float: right; margin-left: 2em;">
+    <li><h1>AB</h1></li>
+</ul>  
+<ul style="list-style-type:none; float: right; margin-left: 2em;">
+  <li>AB=225%</li>
+  <li>00=25%</li>
+  <li>AO=75%</li>
+  <li>BO=75%</li>
+</ul> 
+ 
+</div>
+
+<div class="articulo 2" id="B-0" style=" padding-bottom: 3em; padding-right: 5em; display: none;">
+  <h1 style="text-align: center;">B * 0</h1>
+  <table style="border: 1px solid red; float: left; margin-left: 3em; ">
+    <tr style="background-color: red;">
+      <td style="background-color: green;"></td>
+      <td style="background-color: red;">B</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td style="background-color: red;">0</td>
+      <td>B0</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td style="background-color: red;">0</td>
+      <td>B0</td>
+      <td>00</td>
+    </tr>
+  </table>
+  <table style="border: 1px solid red; float: left; margin-left: 3em; ">
+    <tr style="background-color: red;">
+      <td style="background-color: green;"></td>
+      <td>B</td>
+      <td>B</td>
+    </tr>
+    <tr>
+      <td style="background-color: red;">0</td>
+      <td>B0</td>
+      <td>B0</td>
+    </tr>
+    <tr>
+      <td style="background-color: red;">0</td>
+      <td>B0</td>
+      <td>B0</td>
+    </tr>
+  </table>
+    <ul style="list-style-type:none; float: right; margin-left: 2em;">
+    <li><h1>B0</h1></li>
+</ul>  
+<ul style="list-style-type:none; float: right; margin-left: 2em;">
+  <li>00=50%</li>
+  <li>B0=150%</li>
+
+</ul> 
+</div>
+</div>
+  
+<div class="articulo 2" id="A-0" style=" padding-bottom: 3em; padding-right: 5em; display: none;">
+  <h1 style="text-align: center;">A * 0</h1>
+  <table style="border: 1px solid red; float: left; margin-left: 3em; ">
+    <tr style="background-color: red;">
+      <td style="background-color: green;"></td>
+      <td style="background-color: red;">A</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td style="background-color: red;">0</td>
+      <td>A0</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td style="background-color: red;">0</td>
+      <td>A0</td>
+      <td>00</td>
+    </tr>
+  </table>
+  <table style="border: 1px solid red; float: left; margin-left: 3em; ">
+    <tr style="background-color: red;">
+      <td style="background-color: green;"></td>
+      <td>A</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td style="background-color: red;">0</td>
+      <td>A0</td>
+      <td>A0</td>
+    </tr>
+    <tr>
+      <td style="background-color: red;">0</td>
+      <td>A0</td>
+      <td>A0</td>
+    </tr>
+  </table>
+    <ul style="list-style-type:none; float: right; margin-left: 2em;">
+    <li><h1>A0</h1></li>
+</ul>  
+<ul style="list-style-type:none; float: right; margin-left: 2em;">
+  <li>00=50%</li>
+  <li>A0=150%</li>
+
+</ul> 
+</div>
+</div>
+<div class="articulo 2" id="AB-0" style="padding-bottom: 3em; padding-right: 5em; display: none;">
+  <div style="margin: 0px auto;">
+  <h1 style="text-align: center;">AB * 0</h1>
+  <table style="border: 1px solid red; float: left; margin-left: 3em; ">
+    <tr style="background-color: red;">
+      <td style="background-color: green;"></td>
+      <td>A</td>
+      <td>B</td>
+    </tr>
+    <tr>
+      <td style="background-color: red;">0</td>
+      <td>A0</td>
+      <td>B0</td>
+    </tr>
+    <tr>
+      <td style="background-color: red;">0</td>
+      <td>A0</td>
+      <td>B0</td>
+    </tr>
+  </table>
+</div>
+<br>
+<br>
+<br> 
+   <ul style="list-style-type:none; float: right; margin-left: 2em;">
+    <li><h1>A0 / B0</h1></li>
+</ul>  
+<ul style="list-style-type:none; float: right; margin-left: 2em;">
+  <li>A0=50%</li>
+  <li>B0=50%</li>
+
+</ul>  
+</div>
+<div class="articulo 2" id="AB-A" style=" padding-bottom: 3em; padding-right: 5em; display: none;">
+  <h1 style="text-align: center;">AB * A</h1>
+  <table style="border: 1px solid red; float: left; margin-left: 3em; ">
+    <tr style="background-color: red;">
+      <td style="background-color: green;">ba</td>
+      <td>ba</td>
+      <td>ba</td>
+    </tr>
+    <tr>
+      <td style="background-color: red;">ba</td>
+      <td>ba</td>
+      <td>ba</td>
+    </tr>
+    <tr>
+      <td style="background-color: red;">ba</td>
+      <td>ba</td>
+      <td>ba</td>
+    </tr>
+  </table>
+  <table style="border: 1px solid red; float: left; margin-left: 3em; ">
+    <tr style="background-color: red;">
+      <td style="background-color: green;">ba</td>
+      <td>ba</td>
+      <td>ba</td>
+    </tr>
+    <tr>
+      <td style="background-color: red;">ba</td>
+      <td>ba</td>
+      <td>ba</td>
+    </tr>
+    <tr>
+      <td style="background-color: red;">ba</td>
+      <td>ba</td>
+      <td>ba</td>
+    </tr>
+  </table>
+  <table style="border: 1px solid red; float: left; margin-left: 3em; ">
+    <tr style="background-color: red;">
+      <td style="background-color: green;">ba</td>
+      <td>ba</td>
+      <td>ba</td>
+    </tr>
+    <tr>
+      <td style="background-color: red;">ba</td>
+      <td>ba</td>
+      <td>ba</td>
+    </tr>
+    <tr>
+      <td style="background-color: red;">ba</td>
+      <td>ba</td>
+      <td>ba</td>
+    </tr>
+  </table>
+  <table style="border: 1px solid red; float: left; margin-left: 3em; ">
+    <tr style="background-color: red;">
+      <td style="background-color: green;">ba</td>
+      <td>ba</td>
+      <td>ba</td>
+    </tr>
+    <tr>
+      <td style="background-color: red;">ba</td>
+      <td>ba</td>
+      <td>ba</td>
+    </tr>
+    <tr>
+      <td style="background-color: red;">ba</td>
+      <td>ba</td>
+      <td>ba</td>
+    </tr>
+  </table>
+</div>
+  </div>
+<div class="articulo 2" id="A-A" style="padding-bottom: 3em; padding-right: 5em; display: none;"> 
+<div style="margin: 0px auto;">
+  <h1 style="text-align: center;">A * A</h1>
+  <table style="border: 1px solid red; float: left; margin-left: 3em;" border="red">
+    <tr style="background-color: red;">
+      <td style="background-color: green;"></td>
+      <td>A</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td style="background-color: red;">A</td>
+      <td>AA</td>
+      <td>AA</td>
+    </tr>
+    <tr>
+      <td style="background-color: red;">0</td>
+      <td>A0</td>
+      <td>A0</td>
+    </tr>
+  </table>
+  <table style="border: 1px solid red; float: left; margin-left: 3em; ">
+    <tr style="background-color: red;">
+      <td style="background-color: green;">A</td>
+      <td>A</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td style="background-color: red;">A</td>
+      <td>AA</td>
+      <td>AA</td>
+    </tr>
+    <tr>
+      <td style="background-color: red;">A</td>
+      <td>AA</td>
+      <td>AA</td>
+    </tr>
+  </table>
+  <table style="border: 1px solid red; float: left; margin-left: 3em; ">
+    <tr style="background-color: red;">
+      <td style="background-color: green;"></td>
+      <td>A</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td style="background-color: red;">A</td>
+      <td>AA</td>
+      <td>A0</td>
+    </tr>
+    <tr>
+      <td style="background-color: red;">0</td>
+      <td>A0</td>
+      <td>A0</td>
+    </tr>
+  </table>
+  <table style="border: 1px solid red; float: left; margin-left: 3em; ">
+    <tr style="background-color: red;">
+      <td style="background-color: green;"></td>
+      <td>A</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td style="background-color: red;">A</td>
+      <td>AA</td>
+      <td>A0</td>
+    </tr>
+    <tr>
+      <td style="background-color: red;">A</td>
+      <td>AA</td>
+      <td>A0</td>
+    </tr>
+  </table>
+</div>
+<br>
+<br>
+<br>  
+   <ul style="list-style-type:none; float: right; margin-left: 2em;">
+    <li><h1>AA</h1></li>
+</ul>  
+<ul style="list-style-type:none; float: right; margin-left: 2em;">
+  <li>AA=225%</li>
+  <li>A0=175%</li>
+
+</ul> 
+</div>
+
+<div class="articulo 2" id="B-B" style="padding-bottom: 3em; padding-right: 5em; display: none;">
+<div style="margin: 0px auto;">
+  <h1 style="text-align: center;">B * B</h1>
+  <table style="border: 1px solid red; float: left; margin-left: 3em;" border="red">
+    <tr style="background-color: red;">
+      <td style="background-color: green;"></td>
+      <td>B</td>
+      <td>B</td>
+    </tr>
+    <tr>
+      <td style="background-color: red;">B</td>
+      <td>BB</td>
+      <td>BB</td>
+    </tr>
+    <tr>
+      <td style="background-color: red;">0</td>
+      <td>B0</td>
+      <td>B0</td>
+    </tr>
+  </table>
+  <table style="border: 1px solid red; float: left; margin-left: 3em; ">
+    <tr style="background-color: red;">
+      <td style="background-color: green;"></td>
+      <td>B</td>
+      <td>B</td>
+    </tr>
+    <tr>
+      <td style="background-color: red;">B</td>
+      <td>BB</td>
+      <td>BB</td>
+    </tr>
+    <tr>
+      <td style="background-color: red;">B</td>
+      <td>BB</td>
+      <td>BB</td>
+    </tr>
+  </table>
+  <table style="border: 1px solid red; float: left; margin-left: 3em; ">
+    <tr style="background-color: red;">
+      <td style="background-color: green;"></td>
+      <td>B</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td style="background-color: red;">B</td>
+      <td>BB</td>
+      <td>BB</td>
+    </tr>
+    <tr>
+      <td style="background-color: red;">0</td>
+      <td>B0</td>
+      <td>B0</td>
+    </tr>
+  </table>
+  <table style="border: 1px solid red; float: left; margin-left: 3em; ">
+    <tr style="background-color: red;">
+      <td style="background-color: green;"></td>
+      <td>B</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td style="background-color: red;">B</td>
+      <td>BB</td>
+      <td>B0</td>
+    </tr>
+    <tr>
+      <td style="background-color: red;">B</td>
+      <td>BB</td>
+      <td>B0</td>
+    </tr>
+  </table>
+</div>
+<br>
+<br>
+<br>  
+   <ul style="list-style-type:none; float: right; margin-left: 2em;">
+    <li><h1>BB</h1></li>
+</ul>  
+<ul style="list-style-type:none; float: right; margin-left: 2em;">
+  <li>BB=225%</li>
+  <li>B0=175%</li>
+
+</ul> 
+</div>
+
+<div class="articulo 2" id="AB-AB" style="padding-bottom: 3em; padding-right: 5em; display: none;">
+  <div style="margin: 0px auto;">
+  <h1 style="text-align: center;">AB * AB</h1>
+  <table style="border: 1px solid red; float: left; margin-left: 3em; ">
+    <tr style="background-color: red;">
+      <td style="background-color: green;"></td>
+      <td>A</td>
+      <td>B</td>
+    </tr>
+    <tr>
+      <td style="background-color: red;">A</td>
+      <td>AA</td>
+      <td>AB</td>
+    </tr>
+    <tr>
+      <td style="background-color: red;">B</td>
+      <td>AB</td>
+      <td>BB</td>
+    </tr>
+  </table>
+</div>
+<br>
+<br>
+<br> 
+   <ul style="list-style-type:none; float: right; margin-left: 2em;">
+    <li><h1>AB</h1></li>
+</ul>  
+<ul style="list-style-type:none; float: right; margin-left: 2em;">
+  <li>AA=25%</li>
+  <li>BB=25%</li>
+  <li>AB=50%</li>
+
+</ul>  
+</div>
+
+<div class="articulo 2" id="0-0" style="padding-bottom: 3em; padding-right: 5em; display: none;">
+  <div style="margin: 0px auto;">
+  <h1 style="text-align: center;">0 * 0</h1>
+  <table style="border: 1px solid red; float: left; margin-left: 3em; ">
+    <tr style="background-color: red;">
+      <td style="background-color: green;"></td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td style="background-color: red;">0</td>
+      <td>00</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td style="background-color: red;">0</td>
+      <td>00</td>
+      <td>00</td>
+    </tr>
+  </table>
+</div>
+<br>
+<br>
+<br> 
+   <ul style="list-style-type:none; float: right; margin-left: 2em;">
+    <li><h1>00</h1></li>
+</ul>  
+<ul style="list-style-type:none; float: right; margin-left: 2em;">
+  <li>00=100%</li>
+
+
+</ul>  
+</div>
+
+  </form>
+    
+
+    <script type="text/javascript">
+
+            function calcular(){ 
+            document.getElementById('AB-B').style.display = 'none';
+            document.getElementById('A-B').style.display = 'none';
+            document.getElementById('B-0').style.display = 'none';
+            document.getElementById('A-0').style.display = 'none';
+            document.getElementById('AB-0').style.display = 'none';
+            document.getElementById('AB-A').style.display = 'none';
+            document.getElementById('0-0').style.display = 'none';
+            document.getElementById('A-A').style.display = 'none';
+            document.getElementById('AB-AB').style.display = 'none';
+            document.getElementById('A-A').style.display = 'none';
+
+          if (document.getElementById('ABM').checked && document.getElementById('BP').checked) {
+
+          document.getElementById('AB-B').style.display = 'block';
+        }
+        if (document.getElementById('ABP').checked && document.getElementById('BM').checked) {
+
+          document.getElementById('AB-B').style.display = 'block';
+        }
+
+         if (document.getElementById('AM').checked && document.getElementById('BP').checked) {
+
+          document.getElementById('A-B').style.display = 'block';
+        }
+        if (document.getElementById('AP').checked && document.getElementById('BM').checked) {
+
+          document.getElementById('A-B').style.display = 'block';
+        }
+
+        if (document.getElementById('BP').checked && document.getElementById('0M').checked) {
+
+          document.getElementById('B-0').style.display = 'block';
+        }
+        if (document.getElementById('BM').checked && document.getElementById('0P').checked) {
+
+          document.getElementById('B-0').style.display = 'block';
+        }
+
+        if (document.getElementById('AP').checked && document.getElementById('0M').checked) {
+
+          document.getElementById('A-0').style.display = 'block';
+        }
+        if (document.getElementById('AM').checked && document.getElementById('0P').checked) {
+
+          document.getElementById('A-0').style.display = 'block';
+        }
+        if (document.getElementById('ABM').checked && document.getElementById('0P').checked) {
+
+          document.getElementById('AB-0').style.display = 'block';
+        }
+        if (document.getElementById('ABP').checked && document.getElementById('0M').checked) {
+
+          document.getElementById('AB-0').style.display = 'block';
+        }
+        if (document.getElementById('ABM').checked && document.getElementById('AP').checked) {
+
+          document.getElementById('AB-A').style.display = 'block';
+        }
+        if (document.getElementById('ABP').checked && document.getElementById('AM').checked) {
+
+          document.getElementById('AB-A').style.display = 'block';
+        }
+        if (document.getElementById('AP').checked && document.getElementById('AM').checked) {
+
+          document.getElementById('A-A').style.display = 'block';
+        }
+        if (document.getElementById('BP').checked && document.getElementById('BM').checked) {
+
+          document.getElementById('B-B').style.display = 'block';
+        }
+        if (document.getElementById('ABP').checked && document.getElementById('ABM').checked) {
+
+          document.getElementById('AB-AB').style.display = 'block';
+        }
+        if (document.getElementById('0P').checked && document.getElementById('0M').checked) {
+
+          document.getElementById('0-0').style.display = 'block';
+        }
+
+        }
+
+
+      (function (){
+          var radios = document.getElementsByName('TiposangreP');
+          console.log(radios);
+          for(var i = 0; i < radios.length; i++){
+              radios[i].onclick = function(){
+                  document.getElementById('choiceLabel').innerText = this.value;
+              }
+          }
+          var rados = document.getElementsByName('TiposangreM');
+          console.log(radios);
+          for(var i = 0; i < rados.length; i++){
+              rados[i].onclick = function(){
+                  document.getElementById('choiceLabel2').innerText = this.value;
+              }             
+          }
+
+      })();
+
+
+    </script>
+  <br><br>
+  <br><br>
+  <div id="condenido-final" style="border-color:  #E88E2F; ">
+    <div id="izquierda">
+      <div id="seccion"><a href="">Terminos y <br> conduciones</a></div>
+      <div id="seccion"><a href="">Creadores</a></div>
+      <div id="seccion"><a href="">Contactanos</a></div>
+      <div> <a href="">¿Ayuda?</a></div>
+    </div>  
+    <div id="centro">
+      Este sitio fue creado el:<br>
+      01/11/2017<br><br>
+
+      Los responsables de esta pagina son Nombre completo grupo<br><br>
+
+      El proposito de esta pagina es meramente por la exposicion de nuestros conocimientos.<br>
+      Aun asi, no se permite ningun tipo de copia del contenido de este sitio, cualquier clase de infraccion a estos terminos tendra sus consecuencias, dichas explicadas en los terminos y condiciones de este sitio
+    </div>
+
+    <div id="derecha">
+      <br>
+      <a href="">
+      <img src="../img/github.png" id="github">
+      <br>
+      ABO es un proyecto de fuente abierta, hecho para y por ti, si eres un programador altruista visita nuestro repositorio en github!
+      </a>
+    </div>
+  </div>
+  <script>
+
+  </script>
+
+</body>
+</html>

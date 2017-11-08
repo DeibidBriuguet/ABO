@@ -35,7 +35,7 @@ button {
   padding: 1em;
   z-index: 20;
   position: relative;
-  background-color: 0 1px 1px rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 fieldset{
   z-index: 20;
