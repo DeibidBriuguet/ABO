@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Practica 1</title>
+	<title>Practica</title>
 <title>Terminos y condiciones</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="../estilos/estilos_practicas.css">
@@ -16,11 +16,11 @@
 	<header id="contenedor-barra-navegacion">
 		<nav id="barra-de-navegacion">
 			<ul>
-				<li class="no-icono" id="act"><a href="actividades.html">Actividades</a></li>
-				<li class="icono-home" id="joum"><a href="../index.html"><span class="icon-home3"></span></a>
-				<li class="no-icono" id="tab"><a href="tabla-punnet.html">Tabla de Punnet</a></li>
-				<li class="no-icono" id="test"><a href="test-de-coombs.html">Test de Coombs</a></li>
-				<li class="no-icono" id="lec"><a href="lecciones.html">Lecciones</a></li>
+				<li class="no-icono" id="act"><a href="Practica.html">Actividades</a></li>
+				<li class="icono-home" id="joum"><a href="../Inicio.html"><span class="icon-home3"></span></a>
+				<li class="no-icono" id="tab"><a href="punett.html">Cuadros de Punnet</a></li>
+				<li class="no-icono" id="test"><a href="ritmos.html">Determinacion Sanguinea</a></li>
+				<li class="no-icono" id="lec"><a href="lecturas.html">Lecciones</a></li>
 				
 				
 				</li>
@@ -38,28 +38,27 @@
 	Respuesta abierta. Responde lo que se te indica.<br><br>
 	<div id="completa">
 			<div id="preg-1">
-				Pregunta uno
+				Heredas dos, uno de tu padre y otro de tu madre, y forman el genotipo en el ADN.
 				<br>
-					<input type="text" id="invited" placeholder="(respuesta)"><br><br>
+					<input type="text" id="invited" "><br><br>
 					<button type="button" id="boton1" onclick="atras14()" disabled>Siguiente</button> <button type="button" onclick="actividadcuatro()" id="Uno">Verificar</button><br><br>
 				4/4
 			</div>
 			<div id="preg-2">
-				Pregunta dos<br>
-					<input type="text" id="bougth" placeholder="(respuesta)"><br><br>
+				Sistema con el que se caslifica la sangre en distintos grupos dependiendo de al presencia o ausencia de proteinas en la sangre.<br>
+					<input type="text" id="bougth" "><br><br>
 					<button type="button" id="boton2" onclick="atras13()" disabled>Siguiente</button> <button type="button" onclick="actividadtres()" id="Dos">Verificar</button><br><br>
 				3/4
 			</div>
 			<div id="preg-3">
-				Pregunta tres<br><br>
-					<input type="text" id="destroyed" placeholder="(respuesta)">
-					<input type="text" id="writen" placeholder="(respuesta)"><br>
+				¿Cuantos alelos diferentes hay?<br><br>
+					<input type="text" id="writen"><br>
 					<button type="button" id="boton3" onclick="atras12()" disabled>Siguiente</button> <button type="button" onclick="actividaddos()" id="Tres">Verificar</button><br><br>
 				2/4
 			</div>
 			<div id="preg-4">
-				Pregunta cuatro<br>
-					<input  id="invited1" placeholder="(invite)"><br><br>
+				¿Cuantos genotipos hay?<br>
+					<input  id="invited1" ><br><br>
 
 					<button type="button" id="boton4" onclick="atras11()" disabled >Siguiente</button> <button type="button"  onclick="actividaduno()" id="Cuatro">Verificar</button><br><br>
 					
@@ -70,22 +69,22 @@
 			</div>
 				</div>
 	<br>
-	Ordena los pasos.<br><br>
+	Ordena las oraciones y forma conceptos.<br><br>
 	<div id="ordena">
 			<div id="preg-5">
-				paso 1 y descripcion/paso 2 y descripcion/paso 3 y descripcion/paso 4 y descripcion/	<br><br>
+				La determinación del grupo sanguíneo es especialmente importante durante el embarazo.<br><br>
 					<input type="text" id="segundauno"<br><br>
 				<button type="button" id="boton5" onclick="atras23()" disabled >Siguiente</button> <button type="button" onclick="actividadcinco()" id="Cinco">Verificar</button><br><br>
 				3/3
 			</div>
 			<div id="preg-6">
-				paso 1 y descripcion/paso 2 y descripcion/paso 3 y descripcion/paso 4 y descripcion/	<br>
+				Su tipo de sangre depende de qué tipos de sangre heredó de sus padres.<br>
 					<input type="text" id="segundados"><br><br>
 				<button type="button" id="boton6" onclick="atras22()" disabled >Siguiente</button> <button type="button" onclick="actividadseis()" id="Seis">Verificar</button><br><br>
 				2/3
 			</div>
 			<div id="preg-7">
-				paso 1 y descripcion/paso 2 y descripcion/paso 3 y descripcion/paso 4 y descripcion/	<br><br>
+				La determinación del grupo sanguíneo es un método para indicarle cuál es el tipo de sangre que usted tiene.<br><br>
 					<input type="text" id="segundatres"><br><br>
 				<button type="button" id="boton7" onclick="atras21()" disabled >Siguiente</button> <button type="button" onclick="actividadsiete()" id="Siete">Verificar</button><br><br>
 				1/3
@@ -98,33 +97,33 @@
 		Pregunta cerrada<br><br>
 		<div id="elige">
 			<div id="preg-8">
-				PEjemplo de pregunta<br>
+				¿Cuales de estas convinaciones da como resultado mas cuadros de Punett?<br>
 				
-					<input type="radio" name="respuestaocho" value="A">A
-					<input type="radio" name="respuestaocho" value="B">B<br>
-					<input type="radio" name="respuestaocho" value="C" id="respuestaO"> C
-					<input type="radio" name="respuestaocho" value="D">D<br>
+					<input type="radio" name="respuestaocho" value="A">A.-A/0
+					<input type="radio" name="respuestaocho" value="B">B.-B/0<br>
+					<input type="radio" name="respuestaocho" value="C" id="respuestaO"> C.-A/B
+					<input type="radio" name="respuestaocho" value="D">D.-BA/0<br>
 					<br><br>
 					<button type="button" id="boton8" onclick="atras33()" disabled>Siguiente</button> <button type="button" onclick="actividadocho()" id="Ocho">Verificar</button><br><br>
 					3/3
 			</div>
 			<div id="preg-9">
-				Ejemplo pregunta <br>
+				¿Como identificar sangre del tipo 0?<br>
 				
-					<input type="radio" name="respuestanueve" value="A">A
-					<input type="radio" name="respuestanueve" value="B" id="respuestaN">B<br>
-					<input type="radio" name="respuestanueve" value="C">C
-					<input type="radio" name="respuestanueve" value="D">D<br>
+					<input type="radio" name="respuestanueve" value="A">A.-Tiene aglutinogenos A y B
+					<input type="radio" name="respuestanueve" value="B" id="respuestaN">B.-No tiene aglutinogenos<br>
+					<input type="radio" name="respuestanueve" value="C">C.-Tiene aglutinojenos A
+					<input type="radio" name="respuestanueve" value="D">D.-Tiene Aglutinojenos B<br>
 					<br><br>
 					<button type="button" id="boton9" onclick="atras32()"  disabled>Siguiente</button> <button type="button" onclick="actividadnueve()" id="Nueve">Verificar</button><br><br>
 					2/3
 			</div>
 			<div id="preg-10">
-					Ejemplo pregunta<br>
-					<input type="radio" name="respuestadiez" value="A">A
-					<input type="radio" name="respuestadiez" value="B">B<br>
-					<input type="radio" name="respuestadiez" value="C">C
-					<input type="radio" name="respuestadiez" value="D" id="respuestaD">D<br>
+					¿Cuales de estas convinaciones da como resultado menos cuadros de Punett?<br>
+					<input type="radio" name="respuestadiez" value="A">A.-A/AB
+					<input type="radio" name="respuestadiez" value="B">B.-B/AB<br>
+					<input type="radio" name="respuestadiez" value="C">C.-A/0
+					<input type="radio" name="respuestadiez" value="D" id="respuestaD">D.-0/0<br>
 					<br><br>
 					<button type="button" id="boton10" onclick="atras31()"  disabled>Siguiente</button> <button type="button" onclick="actividaddiez()" id="Diez">Verificar</button><br><br>
 					1/3
@@ -175,9 +174,9 @@
 	<br><br><br><br>
 	<div id="condenido-final">
 		<div id="izquierda">
-			<div id="seccion"><a href="">Terminos y <br> conduciones</a></div>
-			<div id=s"seccion"><a href="">Creadores</a></div>
-			<div id="seccion"><a href="">Contactanos</a></div>
+			<div id="seccion"><a href="terminos.html">Terminos y <br> conduciones</a></div>
+			<div id=s"seccion"><a href="desarrolladores.html">Creadores</a></div>
+			<div id="seccion"><a href="Contactanos.html">Contactanos</a></div>
 			<div> <a href="">¿Ayuda?</a></div>
 		</div>	
 
@@ -185,7 +184,7 @@
 			Este sitio fue creado el:<br>
 			01/11/2017<br><br>
 
-			Los responsables de esta pagina son Nombre completo grupo<br><br>
+			Los responsables de esta pagina son Carmen Anaya, Juan Francisco Garcia, Miriam Hernandez, Yarelli Rodriguez<br><br>
 
 			El proposito de esta pagina es meramente por la exposicion de nuestros conocimientos.<br>
 			Aun asi, no se permite ningun tipo de copia del contenido de este sitio, cualquier clase de infraccion a estos terminos tendra sus consecuencias, dichas explicadas en los terminos y condiciones de este sitio
@@ -224,7 +223,7 @@ function correcto(){
 																
 												            	document.getElementById("boton4").disabled = false;
 												            	var answeruno=document.forms.all.invited1.value;
-												            	if(answeruno=="invited"){
+												            	if(answeruno=="seis"){
 												            		document.getElementById("preg-4").style.backgroundColor="#73dd7f";
 												            		cal+=1;
 												            		cal1+=1;
@@ -240,19 +239,12 @@ function correcto(){
 												       		function actividaddos()
 															{
 												            	document.getElementById("boton3").disabled = false;
-												            	var answerdos=document.forms.all.destroyed.value;
 												            	var answerdosdos=document.forms.all.writen.value;
-																if(answerdos=="destroyed"){
 																
-												            		cal+=.5;
-												            		cal1+=.5;
-												            		alert("CORRECT!!");
-												            		document.getElementById("preg-3").style.backgroundColor="#73dd7f";
-												            	}
-												            	if(answerdosdos=="written"){
+												            	if(answerdosdos=="tres"){
 												   
-												            		cal+=.5;
-												            		cal1+=.5;
+												            		cal+=1;
+												            		cal1+=1;
 												            		alert("CORRECT!!");
 												            		document.getElementById("preg-3").style.backgroundColor="#73dd7f";
 												            	}
@@ -266,7 +258,7 @@ function correcto(){
 															{
 												            	document.getElementById("boton2").disabled = false;
 												            	var answertres=document.forms.all.bougth.value;
-																if(answertres=="bougth"){
+																if(answertres=="sistema AB0"){
 
 																	document.getElementById("preg-2").style.backgroundColor="#73dd7f";
 												            		cal+=1;
@@ -283,7 +275,7 @@ function correcto(){
 															{
 												            	document.getElementById("boton1").disabled = false;
 												            	var answercuatro=document.forms.all.invited.value;
-																if(answercuatro=="invited"){
+																if(answercuatro=="alelos"){
 																	document.getElementById("preg-1").style.backgroundColor="#73dd7f";
 												            		cal+=1;
 												            		cal1=cal
@@ -300,7 +292,7 @@ function correcto(){
 						{
 			            	document.getElementById("boton7").disabled = false;
 			            	var answercinco=document.forms.all.segundatres.value;
-							if(answercinco=="If they had been on holiday in June, the weather would have been better."){
+							if(answercinco=="La determinación del grupo sanguíneo es un método para indicarle cuál es el tipo de sangre que usted tiene."){
 								document.getElementById("preg-7").style.backgroundColor="#73dd7f";
 								cal+=1;
 								cal2+=1;
@@ -317,7 +309,7 @@ function correcto(){
 						{
 			            	document.getElementById("boton6").disabled = false;
 			            	var answerseis=document.forms.all.segundados.value;
-							if(answerseis=="I would have helped you, if you had asked."){
+							if(answerseis=="Su tipo de sangre depende de qué tipos de sangre heredó de sus padres."){
 								document.getElementById("preg-6").style.backgroundColor="#73dd7f";
 								cal+=1;
 								cal2+=1;
@@ -333,7 +325,7 @@ function correcto(){
 						{
 			            	document.getElementById("boton5").disabled = false;
 			            	var answersiete=document.forms.all.segundauno.value;
-							if(answersiete=="Why would you have done if you hadn't time for that?"){
+							if(answersiete=="La determinación del grupo sanguíneo es especialmente importante durante el embarazo."){
 								document.getElementById("preg-5").style.backgroundColor="#73dd7f";
 								cal+=1;
 								cal2+=1;
